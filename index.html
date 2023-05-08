@@ -13,8 +13,8 @@
 
 tw-story {
   font-family: 'Space Mono', monospace;
-  color: #000;
-  background-color: #FFF;
+  color: #FFF;
+  background-color: #000;
 }
 
 .story-image {
@@ -29,14 +29,26 @@ tw-link, tw-link:link, tw-link:visited, tw-link.visited {
 tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
   color: #F01D41;
   text-decoration: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Distress signal" tags="" position="625,300" size="100,100">You are a space explorer on a mission to find new planets to colonize. As you travel &#39;&#39;through&#39;&#39; //space//, you receive a distress signal from a nearby ship.
+}
+
+tw-story[tags~="space"] {  /* the tag added in step 2 */
+  background-image: url(./images/background-space.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="earth"] {  /* the tag added in step 2 */
+  background-image: url(./images/future-flight-central.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Distress signal" tags="space" position="625,300" size="100,100">You are a space explorer on a mission to find new planets to colonize. As you travel &#39;&#39;through&#39;&#39; //space//, you receive a distress signal from a nearby ship.
 
 &lt;img class=&quot;story-image&quot; src=&quot;./images/space.jpg&quot; alt=&quot;you are floating in space&quot; /&gt;
 
 Do you:
 
 * [[Investigate the signal]]
-* [[Ignore the signal and continue your mission]]</tw-passagedata><tw-passagedata pid="2" name="Investigate the signal" tags="" position="625,425" size="100,100">You investigate the signal and discover that the ship has crashed onto an unknown planet. 
+* [[Ignore the signal and continue your mission]]</tw-passagedata><tw-passagedata pid="2" name="Investigate the signal" tags="earth" position="625,425" size="100,100">You investigate the signal and discover that the ship has crashed onto an unknown planet. 
 
 [[&lt;img class=&quot;story-image&quot; src=&quot;./images/control.jpg&quot; alt=&quot;Report the crash to your superiors and continue your mission&quot; title=&quot;Report the crash to your superiors and continue your mission&quot; /&gt;-&gt;Report the crash to your superiors and continue your mission]]
 
@@ -44,7 +56,7 @@ Do you:
 
 Do you:
 * [[Land on the planet to help the survivors]]
-* [[Report the crash to your superiors and continue your mission]]</tw-passagedata><tw-passagedata pid="3" name="Ignore the signal and continue your mission" tags="" position="750,425" size="100,100">You ignore the signal and continue your mission. As you explore a nearby planet, you encounter hostile alien lifeforms.
+* [[Report the crash to your superiors and continue your mission]]</tw-passagedata><tw-passagedata pid="3" name="Ignore the signal and continue your mission" tags="space" position="750,425" size="100,100">You ignore the signal and continue your mission. As you explore a nearby planet, you encounter hostile alien lifeforms.
 
 Do you:
 * [[Fight the aliens]]
