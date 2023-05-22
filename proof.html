@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///private/var/folders/42/xq8ccjhn7f7g08zyl61xqcx00000gn/T/b0122b3f-d672-4a19-928c-182071dd146c.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Space explorer
+</title>
+
+<style>
+body
+{
+	font: 10pt Cousine, monospace;
+	margin: 2em;
+}
+
+h1
+{
+	font-size: 14pt;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+tw-storydata
+{
+	display: block !important;
+}
+
+tw-passagedata
+{
+	display: block !important;
+	line-height: 200%;
+	margin-bottom: 2em;
+	white-space: pre-wrap;
+}
+
+tw-passagedata + tw-passagedata
+{
+	border-top: 1pt dashed black;
+	padding-top: 2em;
+}
+
+tw-passagedata:before
+{
+	content: attr(name);
+	display: block;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Space explorer
+</h1>
+<tw-storydata name="Space explorer" startnode="1" creator="Twine" creator-version="2.6.2" format="Harlowe" format-version="3.3.5" ifid="9B3D6521-2D1E-414D-B9D3-E50AFF88FF3F" options="" tags="" zoom="1" hidden=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+tw-story {
+  font-family: 'Space Mono', monospace;
+  color: #FFF;
+  background-color: #000;
+}
+
+.story-image {
+  width: 100%;
+}
+
+tw-link, tw-link:link, tw-link:visited, tw-link.visited {
+  color: #F01D41;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+tw-link:focus, tw-link:hover, tw-link:active, tw-link.visited:hover {
+  color: #F01D41;
+  text-decoration: none;
+}
+
+tw-story[tags~="space"] {  /* the tag added in step 2 */
+  background-image: url(./images/background-space.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="earth"] {  /* the tag added in step 2 */
+  background-image: url(./images/future-flight-central.jpg);  /* the image added in step 1 */
+  color: #2EE133;
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+
+tw-story[tags~="moving"] {
+  /* animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite; */
+}
+
+@keyframes slidein {
+  from {
+    font-size: 100%;
+  }
+  50% {
+    font-size: 110%;
+  }
+  to {
+    font-size: 100%;
+  }
+}
+
+
+
+.story-room {
+  display: grid;  /* sets the display to grid on the surrounding div */
+  grid-template-columns: 50% 50%;  /* sets each column to 50% */
+}
+.story-text {
+  grid-column: 2;  /* sets which column the text appears in */
+  grid-row: 1;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.story-image {
+  grid-column: 1;  /* sets which column the image appears in */
+  grid-row: 1;
+}
+
+#mission .control-image {
+ display: none; 
+}
+
+
+#mission:hover .control-image {
+  display: block;
+  position: absolute;
+  width: 500px;
+  z-index: 1000;
+}
+/*
+.control-image #mission { position:relative; }
+.control-image #mission span { position:absolute; display:none; z-index:99; }
+.control-image #mission:hover span { display:block; }*/
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Distress signal" tags="space" position="625,300" size="100,100">&lt;div class="story-room"&gt;&lt;div class="story-text"&gt;You are a space explorer on a mission to find new planets to colonize. As you travel ''through'' //space//, you receive a distress signal from a nearby ship.&lt;/div&gt;&lt;div class="story-image"&gt;&lt;img class="story-image" src="./images/space.jpg" alt="you are floating in space" /&gt;&lt;/div&gt;&lt;/div&gt;
+
+Do you:
+
+* [[Investigate the signal]]
+* [[Ignore the signal and continue your mission]]</tw-passagedata><tw-passagedata pid="2" name="Investigate the signal" tags="earth" position="625,425" size="100,100">You investigate the signal and discover that the ship has crashed onto an unknown planet. 
+
+[[&lt;img class="story-image" src="./images/control.jpg" alt="Report the crash to your superiors and continue your mission" title="Report the crash to your superiors and continue your mission" /&gt;-&gt;Report the crash to your superiors and continue your mission]]
+
+&lt;audio src="./audio/hum.mp3" autoplay loop&gt;&lt;/audio&gt;
+
+Do you:
+* [[Land on the planet to help the survivors]]
+* [[Report the crash to your superiors and continue your mission]]</tw-passagedata><tw-passagedata pid="3" name="Ignore the signal and continue your mission" tags="moving" position="750,425" size="100,100">You ignore the signal and &lt;span id="mission"&gt;continue&lt;img class="control-image" src="./images/space.jpg" alt="you are floating in space" /&gt;&lt;/span&gt; your mission. As you explore a nearby planet, you encounter hostile alien lifeforms.
+
+Do you:
+* [[Fight the aliens]]
+* [[Retreat and find a safer planet to explore]]</tw-passagedata><tw-passagedata pid="4" name="Land on the planet to help the survivors" tags="" position="625,550" size="100,100">You land on the planet and find a few survivors, but they are trapped in a dangerous area. 
+
+Do you:
+* [[Attempt a rescue mission]]
+* [[Leave the survivors behind and return to your ship]]</tw-passagedata><tw-passagedata pid="5" name="Report the crash to your superiors and continue your mission" tags="" position="750,550" size="100,100">You report the crash to your superiors and receive orders to continue your mission. Do you:
+* [[Follow orders and continue your mission]]
+* [[Disobey orders and return to the crashed ship to help the survivors]]</tw-passagedata><tw-passagedata pid="6" name="Fight the aliens" tags="" position="875,550" size="100,100">You fight the aliens, but they overpower you and destroy your ship.
+
+Do you:
+* [[Accept your fate and wait for rescue]]
+* [[Attempt to find a way off the planet on your own]]</tw-passagedata><tw-passagedata pid="7" name="Retreat and find a safer planet to explore" tags="" position="1025,375" size="100,100">You retreat and find a safer planet to explore.
+
+Do you:
+* [[Continue your mission]]
+* [[Report the hostile aliens to your superiors]]</tw-passagedata><tw-passagedata pid="8" name="Attempt a rescue mission" tags="" position="625,675" size="100,100">You attempt a rescue mission and manage to save the survivors. However, your ship sustains damage in the process.
+
+Do you:
+* [[Attempt repairs on your own]]
+* [[Call for assistance from nearby ships]]</tw-passagedata><tw-passagedata pid="9" name="Leave the survivors behind and return to your ship" tags="" position="750,675" size="100,100"></tw-passagedata><tw-passagedata pid="10" name="Follow orders and continue your mission" tags="" position="875,675" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="Disobey orders and return to the crashed ship to help the survivors" tags="" position="1025,500" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="Attempt repairs on your own" tags="" position="625,800" size="100,100">You attempt repairs on your own, but the damage is too severe.
+
+Do you:
+* [[Accept the inevitable and wait for rescue]]
+* [[Attempt to use escape pods to reach a nearby planet]]</tw-passagedata><tw-passagedata pid="13" name="Call for assistance from nearby ships" tags="" position="750,800" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="Accept your fate and wait for rescue" tags="" position="1000,675" size="100,100">You accept your fate and wait for rescue, but it never arrives.
+
+Do you:
+* [[Give up hope and resign yourself to your fate]]
+* [[Attempt to make contact with other survivors on the planet]]</tw-passagedata><tw-passagedata pid="15" name="Attempt to find a way off the planet on your own" tags="" position="1175,650" size="100,100"></tw-passagedata><tw-passagedata pid="16" name="Continue your mission" tags="" position="1150,500" size="100,100">You continue your mission and discover a habitable planet.
+
+Do you:
+* [[Begin the process of colonization]]
+* [[Continue exploring for other potential planets to colonize]]</tw-passagedata><tw-passagedata pid="17" name="Report the hostile aliens to your superiors" tags="" position="1025,875" size="100,100"></tw-passagedata><tw-passagedata pid="18" name="Accept the inevitable and wait for rescue" tags="" position="625,925" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Attempt to use escape pods to reach a nearby planet" tags="" position="750,925" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Give up hope and resign yourself to your fate" tags="" position="875,800" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Attempt to make contact with other survivors on the planet" tags="" position="875,925" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Begin the process of colonization" tags="" position="1150,875" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Continue exploring for other potential planets to colonize" tags="" position="1275,875" size="100,100"></tw-passagedata></tw-storydata>
+
+
+
+
+</body></html>
